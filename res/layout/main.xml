@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Move To Left"
+        android:onClick="moveToLeft"
+        />
+    <TextView
+            android:layout_gravity="center|bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a fragment animation test app"
+            />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move To Right"
+            android:onClick="moveToRight"
+            />
+    <fragment
+            android:name="com.hyn.PanelLineAnimation.Fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_tag"
+        />
+</LinearLayout>
+
